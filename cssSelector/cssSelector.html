@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Page</title>
+  </head>
+  <body>
+    <button onclick="handleOnClick()" style="background-color: blue; color: white">New button</button>
+    <!-- Your JavaScript code will be added here -->
+    <script src="./cssSelector.js"></script>
+    <script>
+        function handleOnClick() {
+          const color = $('button').css('color');
+          console.log('Button color:', color);
+          $('button').css('color', "");
+        }
+      </script>
+  </body>
+</html>
